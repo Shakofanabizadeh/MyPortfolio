@@ -336,6 +336,10 @@ form {
   align-items: start;
 
 }
+.contact-iteams a :hover{
+  color:#89023e;
+
+ }
 
  .btn{
     width: 90%;
@@ -350,6 +354,9 @@ form {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 } 
+.btn:hover {
+ font-weight: bold;
+}
 
  footer{
   width: 100%;
