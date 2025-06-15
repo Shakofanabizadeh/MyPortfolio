@@ -13,7 +13,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 10px;
     width: 100%;
-    background-color: rgb(235, 234, 234);
+    background-color: rgb(131, 130, 130);
     position: fixed;  
     z-index: +5;
   }
@@ -58,10 +58,11 @@
   margin-left: 18px;
   position: fixed;
   font-weight: bold;
+  line-break: loose;
 }
 #web-designer{
    font-size: 20px; 
-   color: white;
+   color: rgb(144, 144, 144);
    position:relative; 
    margin-right: 130px;
    animation: web-designer 3s ease-in-out infinite;
@@ -69,7 +70,7 @@
 @keyframes web-designer {
   
   0%{
-    color:rgb(255, 255, 255) ;
+    color:rgb(161, 161, 161) ;
   }
 
    50%{
@@ -80,25 +81,30 @@
   }
 
    100%{
-    color:#ffffff ;
+    color:#848484 ;
   }
 }
 .section1 {
-   width: 100%;
-   height: 700px;
-   background-image: url(./background.jpg); 
-   background-repeat: no-repeat;
-   background-size: 100% 80%;
-   z-index: -1;
-   padding-top: 200px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+       width: 100%;
+    height: 700px;
+     background-image: url(./background.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #250111;  */
+    border-radius: 10px;
+    z-index: -1;
+    padding-top: 200px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
 }
 #wellcome {
-  color: white;
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
+   color: rgb(171, 171, 171); 
+   display: flex;
+   flex-direction: column; 
+   align-items: center; 
   
 }
 .img {
@@ -139,12 +145,12 @@ margin-left: 120px;
   background-color: #250111;
   color: rgb(192, 192, 192);
   border-radius: 10px;
-  margin: 0px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
 
 }
 .section2:hover{
  border: white 1px solid;
- box-shadow:0 0 10px #250111 , 0 0 20px #250111;
+  box-shadow:0 0 10px #250111 , 0 0 20px #250111;
 }
 
 
@@ -341,11 +347,9 @@ form {
 
  }
 
- .btn{
-    width: 90%;
+.btn{
     background-color: #540317; 
     border-radius: 10px;
- 
     padding: 10px 20px;
     margin: 10px;
     border: none;
@@ -400,13 +404,14 @@ form {
   position: fixed;
   z-index: +5;
   height: 80px;
- box-sizing: border-box;
- max-width: 100%;
+  box-sizing: border-box;
+  
+ 
 }
-#logo{
+#mo-logo{
 font-size: 30px;
 position: fixed;
-margin-left: 5px;
+margin-left: 0px;
 }
 
 #wellcome{
@@ -428,10 +433,10 @@ margin-left: 5px;
 #img1 img{
   display: block;
   margin-top: 40px;
-  width: 80%;
- margin: 40px;
+  width: 100%;
+  max-width: 300px;
+ margin: 20px auto ;
  border: #89023e 4px solid;
- max-width: 100%;
 }
 .section2{
   display: block;
@@ -445,7 +450,6 @@ margin-left: 5px;
 }
 #img2 img{
   width: 280px;
-  max-width: 100%;
 }
 .section2-2{
   display: block;
@@ -477,12 +481,15 @@ margin-left: 5px;
 
 }
 .skills{
-margin-left: 5px;
+margin-left: 0px;
 display: grid;
 grid-template-columns: 1fr 1fr ;
 grid-template-rows: 1fr 1fr 1fr;
 gap: 20px;
-width: auto;
+justify-content: center;
+width: 100%;
+padding: 0px 10px ;
+margin: auto;
 }
 .skill-iteams{
   width: 150px;
@@ -532,15 +539,21 @@ width: auto;
     font-size: 28px;
     gap: 15px;
     align-items: center;
-}
+
 .iteam2 {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 96%;
-    margin: 0px 0px 20px 78px;
-
+    width: 90%;
+    margin: auto;
+    
 }
+form {
+      width: 100%;
+    margin: auto;
+    max-width: 400px;
+}
+
  footer{
   width: 100%;
   max-width: 767px;
