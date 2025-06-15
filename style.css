@@ -400,8 +400,8 @@ form {
   position: fixed;
   z-index: +5;
   height: 80px;
-  
- 
+ box-sizing: border-box;
+ max-width: 100%;
 }
 #logo{
 font-size: 30px;
@@ -431,6 +431,7 @@ margin-left: 5px;
   width: 80%;
  margin: 40px;
  border: #89023e 4px solid;
+ max-width: 100%;
 }
 .section2{
   display: block;
@@ -444,6 +445,7 @@ margin-left: 5px;
 }
 #img2 img{
   width: 280px;
+  max-width: 100%;
 }
 .section2-2{
   display: block;
